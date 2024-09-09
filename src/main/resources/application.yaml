@@ -1,0 +1,20 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /upload
+
+file:
+  upload-dir: E:\
+
+spring:
+  application:
+    name: upload-service
+  datasource:
+    url: "jdbc:mysql://localhost:3306/test_upload"
+    driverClassName: "com.mysql.cj.jdbc.Driver"
+    username: root2
+    password: 123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
